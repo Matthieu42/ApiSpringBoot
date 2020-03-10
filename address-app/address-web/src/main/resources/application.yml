@@ -4,7 +4,7 @@ spring:
   application:
     name: address
   datasource:
-    url: jdbc:postgresql://localhost:5432/mines
+    url: jdbc:postgresql://159.31.70.104:5432/mines
     password: mines
     username: mines
 
