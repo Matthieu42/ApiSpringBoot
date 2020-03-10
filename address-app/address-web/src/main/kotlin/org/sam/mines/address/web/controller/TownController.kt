@@ -1,21 +1,17 @@
 package org.sam.mines.address.web.controller
 
 import org.sam.mines.address.api.controller.TownApi
-import org.sam.mines.address.api.model.Town
-import org.sam.mines.address.service.TownService
+import org.sam.mines.address.service.WebsiteService
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder
-import java.util.*
 
 
 @CrossOrigin(origins = ["*"])
 @RestController
 @RequestMapping
-class TownController @Autowired constructor(val townService: TownService) : TownApi {
+class TownController @Autowired constructor(val websiteService: WebsiteService) : TownApi {
     /*override fun create(town: Town): ResponseEntity<Town> =
             townService.save(town.map())
                     .map()
